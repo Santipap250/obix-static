@@ -12,6 +12,31 @@
   <h1>OBIXConfig Doctor</h1>
   <p>วิเคราะห์โดรน FPV แบบมือโปร</p>
 
+  <div class="field">
+    <label>ขนาดเฟรม</label>
+    <select id="frame">
+      <option value="5inch">5 นิ้ว</option>
+      <option value="3.5inch">3.5 นิ้ว</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>แบตเตอรี่</label>
+    <select id="battery">
+      <option value="4S">4S</option>
+      <option value="6S">6S</option>
+    </select>
+  </div>
+
+  <div class="field">
+    <label>สไตล์การบิน</label>
+    <select id="style">
+      <option value="freestyle">Freestyle</option>
+      <option value="cinematic">Cinematic</option>
+      <option value="longrange">Long Range</option>
+    </select>
+  </div>
+
   <button onclick="analyze()">เริ่มวิเคราะห์</button>
 
   <div id="result"></div>
@@ -20,4 +45,3 @@
 <script src="app.js"></script>
 </body>
 </html>
-<!-- updated -->
